@@ -1,0 +1,153 @@
+# Environment variables - CRITICAL: Protects API keys
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python - Standard Python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment - Don't commit venv
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+myenv/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Python version management
+.python-version
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# AI/ML Specific - IMPORTANT for RAG projects
+# Data directories - Don't commit user uploads or processed data
+data/uploads/*
+data/processed/*
+data/cache/*
+data/vector_store/*
+
+# Keep directory structure but ignore contents
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+!data/cache/.gitkeep
+!data/vector_store/.gitkeep
+
+# Model files - Large AI model files
+*.bin
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+models/
+*.model
+
+# Vector databases and embeddings
+*.faiss
+*.index
+embeddings/
+vector_stores/
+
+# Hugging Face cache
+.cache/
+transformers_cache/
+
+# PyTorch specific
+*.pth
+*.pt
+
+# Logs and debugging
+logs/
+*.log
+debug.log
+app.log
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+temp/
+
+# OS specific
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.nfs*
+
+# FastAPI specific
+.pytest_cache/
+
+# Gradio specific
+gradio_cached_examples/
+flagged/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Secrets and certificates
+*.pem
+*.key
+*.crt
+secrets/
+
+# Environment-specific config
+config.local.json
+settings.local.json
